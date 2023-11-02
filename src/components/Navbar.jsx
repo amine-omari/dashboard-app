@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className='bg-gray-900 w-fit h-screen flex'>
       <div className='text-white flex flex-col mt-40'>
-        <button>
+        <button className='p-6'>
         <InboxIcon />
         </button>
       </div>
