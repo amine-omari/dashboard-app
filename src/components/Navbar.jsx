@@ -4,6 +4,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className=''>
+      <div>
+        <InboxIcon />
+      </div>
     </nav>
   )
 }
