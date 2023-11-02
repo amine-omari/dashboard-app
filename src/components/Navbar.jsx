@@ -3,8 +3,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className=''>
-      <div>
+    <nav className='bg-gray-900 w-fit p-6 h-screen'>
+      <div className='text-white flex flex-col mt-40'>
         <InboxIcon />
       </div>
     </nav>
