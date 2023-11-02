@@ -6,9 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen ">
+    <div>
       <Navbar />
-      <h1 className="text-2xl font-semibold">Welcome to dashboard app</h1>
     </div>
   );
 }

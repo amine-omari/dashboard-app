@@ -1,5 +1,11 @@
-import React from "react";
+import InboxIcon from '@/icons/InboxIcon'
+import React from 'react'
 
-export default function Navbar() {
-  return <div className="bg-red-500">This is the Navbar</div>;
+const Navbar = () => {
+  return (
+    <nav className=''>
+    </nav>
+  )
 }
+
+export default Navbar
