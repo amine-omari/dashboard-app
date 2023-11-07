@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gray-900 w-[100px] h-screen">
-      <div className="text-white flex flex-col mt-20">
+    <nav className="bg-gray-900 w-[80px] h-screen">
+      <div className="text-white flex flex-col mt-28">
         {BUTTON_ARRAY.map((Icon, index) => (
           <Button key={index} icon={<Icon />} />
         ))}
