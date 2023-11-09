@@ -8,7 +8,7 @@ const Search = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className="w-6 h-6 text-gray-500"
     >
       <path
         strokeLinecap="round"
