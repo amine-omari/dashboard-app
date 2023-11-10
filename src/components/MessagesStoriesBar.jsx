@@ -2,7 +2,7 @@ import React from 'react'
 
 const MessagesStoriesBar = () => {
   return (
-    <div></div>
+    <div>hello world</div>
   )
 }
 
