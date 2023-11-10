@@ -3,7 +3,7 @@ import StoriesBar from "./StoriesBar";
 
 const MessagesStoriesBar = () => {
   return (
-    <div>
+    <div className="bg-gray-800 flex flex-col min-h-screen">
       <StoriesBar />
     </div>
   );
