@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const StoryPreview = () => {
   return (
-    <div></div>
-  )
-}
+    <button className="flex flex-col text-gray-200 font-semibold text-sm">
+      <span className="p-4 rounded-full">
+      </span>
+      <p>My Story</p>
+    </button>
+  );
+};
 
-export default StoryPreview
+export default StoryPreview;
