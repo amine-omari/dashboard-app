@@ -1,12 +1,12 @@
-import React from 'react'
-import StoriesBar from './StoriesBar'
+import React from "react";
+import StoriesBar from "./StoriesBar";
 
 const MessagesStoriesBar = () => {
   return (
     <div>
-        <StoriesBar/>
+      <StoriesBar />
     </div>
-  )
-}
+  );
+};
 
-export default MessagesStoriesBar
+export default MessagesStoriesBar;
