@@ -11,8 +11,8 @@ export default function Home() {
     <div className="flex">
       <Navbar />
       <div className="w-full">
-      <Topbar />
-      <MessagesStoriesBar />
+        <Topbar />
+        <MessagesStoriesBar />
       </div>
     </div>
   );

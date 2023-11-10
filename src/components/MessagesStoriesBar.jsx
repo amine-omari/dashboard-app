@@ -1,8 +1,11 @@
 import React from 'react'
+import StoriesBar from './StoriesBar'
 
 const MessagesStoriesBar = () => {
   return (
-    <div>hello world</div>
+    <div>
+        <StoriesBar/>
+    </div>
   )
 }
 
