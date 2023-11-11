@@ -1,4 +1,4 @@
-import Plus from "@/icons/plus";
+import Plus from "@/icons/Plus";
 import React from "react";
 import StoryPreview from "./StoryPreview";
 
