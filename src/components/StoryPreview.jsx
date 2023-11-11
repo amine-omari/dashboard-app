@@ -1,11 +1,12 @@
 import React from "react";
 
-const StoryPreview = () => {
+const StoryPreview = ({ src, text }) => {
   return (
-    <button className="flex flex-col text-gray-200 font-semibold text-sm">
-      <span className="p-4 rounded-full">
+    <button className="flex flex-col items-center text-gray-200 font-semibold text-sm">
+      <span>
+        <img src={src} className="w-[58px] h-[58px] rounded-full"/>
       </span>
-      <p>My Story</p>
+      <p>{text}</p>
     </button>
   );
 };
