@@ -1,10 +1,14 @@
 import React from "react";
 
-const StoryPreview = ({ src, text }) => {
+const StoryPreview = ({ src, alt, text }) => {
   return (
-    <button className="flex flex-col items-center text-gray-200 font-semibold text-sm">
+    <button className="flex flex-col items-center justify-between text-gray-200 font-semibold text-sm">
       <span>
-        <img src={src} className="min-w-[58px] min-h-[58px] rounded-full" />
+        <img
+          src={src}
+          className="max-w-[58px] max-h-[58px] rounded-full"
+          alt={alt}
+        />
       </span>
       <p>{text}</p>
     </button>
