@@ -12,17 +12,22 @@ const StoriesBar = () => {
     {
       id: 2,
       src: "/imgs/StoryImg2.jpg",
-      text: "Mia K.",
+      text: "Jake K.",
     },
     {
       id: 3,
       src: "/imgs/StoryImg3.jpg",
       text: "Kate R.",
     },
+    {
+      id: 4,
+      src: "/imgs/StoryImg4.jpg",
+      text: "Jack M.",
+    },
   ];
 
   return (
-    <div className="flex gap-x-6 p-5">
+    <div className="overflow-auto whitespace-nowrap flex justify-between gap-x-6 p-5">
       <button className="flex flex-col text-gray-200 font-semibold text-sm">
         <span className="border border-gray-700 p-4 rounded-full text-gray-400">
           <Plus />
