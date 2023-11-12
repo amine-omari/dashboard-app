@@ -17,8 +17,8 @@ const MessagesBar = () => {
             It is a long established fact that a...
           </p>
         </div>
-        <div className="text-sm mt-1.5 flex flex-col items-center">
-          <time className="text-gray-500">6:03</time>
+        <div className="text-sm mt-2 flex flex-col items-center space-y-0.5">
+          <time className="text-gray-500 text-xs">6:03</time>
           <p className="text-white bg-violet-500 px-1.5 rounded-full">1</p>
         </div>
       </button>
