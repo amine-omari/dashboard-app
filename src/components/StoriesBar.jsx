@@ -6,25 +6,25 @@ const StoriesBar = () => {
   const STORY_IMGS_data = [
     {
       id: 1,
-      src: "/imgs/StoryImg1.jpg",
+      src: "/imgs/ProfilePic1.jpg",
       alt: "profile-img1",
       text: "Arthur M.",
     },
     {
       id: 2,
-      src: "/imgs/StoryImg2.jpg",
+      src: "/imgs/ProfilePic2.jpg",
       alt: "profile-img2",
       text: "Jake K.",
     },
     {
       id: 3,
-      src: "/imgs/StoryImg3.jpg",
+      src: "/imgs/ProfilePic3.jpg",
       alt: "profile-img3",
       text: "Kate R.",
     },
     {
       id: 4,
-      src: "/imgs/StoryImg4.jpg",
+      src: "/imgs/ProfilePic4.jpg",
       alt: "profile-img4",
       text: "Jack M.",
     },
