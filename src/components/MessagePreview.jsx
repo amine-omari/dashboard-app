@@ -1,4 +1,4 @@
-import Seen from "@/icons/seen";
+import Seen from "@/icons/Seen";
 import React from "react";
 import MessageNotification from "./MessageNotification";
 
