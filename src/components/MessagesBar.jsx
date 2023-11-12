@@ -1,27 +1,113 @@
 import React from "react";
+import MessagePreview from "./MessagePreview";
 
 const MessagesBar = () => {
+  const MESSAGE_IMGS_DATA = [
+    {
+      id: 1,
+      src: "/imgs/ProfilePic1.jpg",
+      name: "Mark Killerz",
+      lastMessage: "it is a long established fact that a...",
+      time: "7:41",
+      seen: false,
+      notification: true,
+    },
+    {
+      id: 2,
+      src: "/imgs/ProfilePic2.jpg",
+      name: "Mark Killerz",
+      lastMessage: "Many desktop publishing packages...",
+      time: "7:41",
+      seen: false,
+      notification: true,
+    },
+    {
+      id: 3,
+      src: "/imgs/ProfilePic3.jpg",
+      name: "Marcin Duda",
+      lastMessage: "Various vesions have evolved over...",
+      time: "9:02",
+      seen: false,
+      notification: false,
+    },
+    {
+      id: 4,
+      src: "/imgs/ProfilePic4.jpg",
+      name: "Wiz Clark",
+      lastMessage: "it is a long established fact that a...",
+      time: "9:41",
+      seen: true,
+      notification: false,
+    },
+    {
+      id: 5,
+      src: "/imgs/ProfilePic1.jpg",
+      name: "Creme Digital",
+      lastMessage: "You: fireeee!",
+      time: "10:30",
+      seen: true,
+      notification: false,
+    },
+    {
+      id: 6,
+      src: "/imgs/ProfilePic2.jpg",
+      name: "Michael Dias",
+      lastMessage: "You: wow, really cool",
+      time: "11:24",
+      seen: true,
+      notification: false,
+    },
+    {
+      id: 7,
+      src: "/imgs/ProfilePic3.jpg",
+      name: "Ahmed Pularizo",
+      lastMessage: "Sometimes on purpose",
+      time: "12:09",
+      seen: false,
+      notification: false,
+    },
+    {
+      id: 8,
+      src: "/imgs/ProfilePic4.jpg",
+      name: "Jacob Ben",
+      lastMessage: "it is a long established fact that a...",
+      time: "12:58",
+      seen: false,
+      notification: false,
+    },
+    {
+      id: 9,
+      src: "/imgs/ProfilePic1.jpg",
+      name: "Mark Killerz",
+      lastMessage: "Many desktop publishing packages...",
+      time: "7:41",
+      seen: false,
+      notification: true,
+    },
+    {
+      id: 10,
+      src: "/imgs/ProfilePic2.jpg",
+      name: "Mark Killerz",
+      lastMessage: "Many desktop publishing packages...",
+      time: "7:41",
+      seen: true,
+      notification: false,
+    },
+  ];
+
   return (
-    <div>
-      <button className="p-5 flex justify-between w-full">
-        <span>
-          <img
-            src="/imgs/ProfilePic1.jpg"
-            alt="profile pic"
-            className="max-w-12 max-h-12 rounded-full"
-          />
-        </span>
-        <div className="flex flex-col items-start">
-          <h3 className="text-gray-200">Arthur Maliza</h3>
-          <p className="text-gray-500 text-sm">
-            It is a long established fact that a...
-          </p>
-        </div>
-        <div className="text-sm mt-2 flex flex-col items-center space-y-0.5">
-          <time className="text-gray-500 text-xs">6:03</time>
-          <p className="text-white bg-violet-500 px-1.5 rounded-full">1</p>
-        </div>
-      </button>
+    <div className="overflow-auto">
+      {MESSAGE_IMGS_DATA.map((item) => (
+        <MessagePreview
+          key={item.id}
+          src={item.src}
+          name={item.name}
+          lastMessage={item.lastMessage}
+          time={item.time}
+          seen={item.seen}
+          notification={item.notification}
+        />
+      ))}
     </div>
   );
 };
