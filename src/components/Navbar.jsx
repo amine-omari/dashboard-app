@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 w-20 min-h-screen">
-      <div className="text-center pt-4 pb-6 w-full border-b border-gray-800 font-semibold text-white text-4xl">
+      <div className="text-center pt-4 pb-6 w-full border-b border-gray-700/60 font-semibold text-white text-4xl">
         c<span className="text-violet-500/90">.</span>
       </div>
       <div className="text-white flex flex-col mt-28">
