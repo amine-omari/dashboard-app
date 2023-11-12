@@ -1,5 +1,6 @@
 import Seen from "@/icons/seen";
 import React from "react";
+import MessageNotification from "./MessasgeNotification";
 
 const MessagePreview = ({
   src,
@@ -26,7 +27,7 @@ const MessagePreview = ({
         <time className="text-gray-500 text-xs">{time}</time>
         <p className="text-white bg-violet-500 px-1.5 rounded-full">
           {seen && <Seen />}
-          {notification && <Notification />}
+          {notification && <MessageNotification />}
         </p>
       </div>
     </button>
