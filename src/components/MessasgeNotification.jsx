@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Notification = () => {
+const MessageNotification = () => {
   return (
     <p className="text-white bg-violet-500 px-1.5 rounded-full">1</p>
   )
 }
 
-export default Notification
+export default MessageNotification
