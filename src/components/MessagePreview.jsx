@@ -1,6 +1,6 @@
 import Seen from "@/icons/seen";
 import React from "react";
-import MessageNotification from "./MessasgeNotification";
+import MessageNotification from "./MessageNotification";
 
 const MessagePreview = ({
   src,
@@ -25,10 +25,8 @@ const MessagePreview = ({
       </div>
       <div className="text-sm mt-2 flex flex-col items-center space-y-0.5">
         <time className="text-gray-500 text-xs">{time}</time>
-        <p className="text-white bg-violet-500 px-1.5 rounded-full">
           {seen && <Seen />}
           {notification && <MessageNotification />}
-        </p>
       </div>
     </button>
   );
