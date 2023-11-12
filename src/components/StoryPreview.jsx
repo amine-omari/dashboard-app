@@ -2,7 +2,7 @@ import React from "react";
 
 const StoryPreview = ({ src, alt, text }) => {
   return (
-    <button className="flex flex-col items-center justify-between text-gray-200 font-semibold text-sm">
+    <button className="flex flex-col items-center text-gray-200 font-semibold text-sm space-y-1">
       <span>
         <img
           src={src}
