@@ -31,7 +31,7 @@ const StoriesBar = () => {
   ];
 
   return (
-    <div className="overflow-auto whitespace-nowrap flex gap-x-6 p-5">
+    <div className="overflow-auto whitespace-nowrap scrollbar-none flex gap-x-6 p-5">
       <button className="flex flex-col text-gray-200 font-semibold text-sm">
         <span className="border border-gray-700 p-4 rounded-full text-gray-400">
           <Plus />
