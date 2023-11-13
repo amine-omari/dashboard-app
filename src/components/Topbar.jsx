@@ -5,7 +5,7 @@ import React from "react";
 
 const Topbar = () => {
   return (
-    <div className="flex justify-between h-20 bg-gray-900 w-full border border-gray-800">
+    <div className="flex justify-between h-[81px] bg-gray-900 w-full border border-gray-700/60">
       <div className="flex items-center gap-x-4 ml-10">
         <span className="text-gray-400 w-6">
           <Search />
