@@ -13,8 +13,10 @@ export default function Home() {
       <Navbar />
       <div className="w-full">
         <Topbar />
+        <div className="flex">
         <MessagesStoriesBar />
         <MainChatBar/>
+        </div>
       </div>
     </div>
   );
