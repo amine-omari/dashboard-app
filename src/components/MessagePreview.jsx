@@ -21,12 +21,14 @@ const MessagePreview = ({
       </span>
       <div className="flex flex-col items-start w-[70%]">
         <p className="text-gray-200">{name}</p>
-        <p className="text-gray-500 text-sm">{lastMessage}</p>
+        <p className="text-gray-500 text-sm text-left truncate w-full">
+          {lastMessage}
+        </p>
       </div>
       <div className="text-sm mt-2 flex flex-col items-center space-y-0.5">
         <time className="text-gray-500 text-xs">{time}</time>
-          {seen && <Seen />}
-          {notification && <MessageNotification />}
+        {seen && <Seen />}
+        {notification && <MessageNotification />}
       </div>
     </button>
   );
