@@ -11,7 +11,7 @@ const MessagePreview = ({
   notification,
 }) => {
   return (
-    <button className="p-5 flex justify-around items-center gap-x-3 w-full">
+    <button className="p-5 flex justify-around items-center gap-x-3 w-full border-y border-gray-700/60 hover:bg-gray-700/50">
       <span>
         <img
           src={src}
