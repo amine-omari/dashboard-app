@@ -7,7 +7,7 @@ const MessagesBar = () => {
       id: 1,
       src: "/imgs/ProfilePic1.jpg",
       name: "Mark Killerz",
-      lastMessage: "it is a long established fact that a...",
+      lastMessage: "it is a long established fact that a sdfsdffd sdfsdfsdf",
       time: "7:41",
       seen: false,
       notification: true,
@@ -16,7 +16,7 @@ const MessagesBar = () => {
       id: 2,
       src: "/imgs/ProfilePic2.jpg",
       name: "Mark Killerz",
-      lastMessage: "Many desktop publishing packages...",
+      lastMessage: "Many desktop publishing packages",
       time: "7:41",
       seen: false,
       notification: true,
@@ -25,7 +25,7 @@ const MessagesBar = () => {
       id: 3,
       src: "/imgs/ProfilePic3.jpg",
       name: "Marcin Duda",
-      lastMessage: "Various vesions have evolved over...",
+      lastMessage: "Various vesions have evolved over",
       time: "9:02",
       seen: false,
       notification: false,
@@ -34,7 +34,7 @@ const MessagesBar = () => {
       id: 4,
       src: "/imgs/ProfilePic4.jpg",
       name: "Wiz Clark",
-      lastMessage: "it is a long established fact that a...",
+      lastMessage: "it is a long established fact that a",
       time: "9:41",
       seen: true,
       notification: false,
@@ -70,7 +70,7 @@ const MessagesBar = () => {
       id: 8,
       src: "/imgs/ProfilePic4.jpg",
       name: "Jacob Ben",
-      lastMessage: "it is a long established fact that a...",
+      lastMessage: "it is a long established fact that a",
       time: "12:58",
       seen: false,
       notification: false,
@@ -79,7 +79,7 @@ const MessagesBar = () => {
       id: 9,
       src: "/imgs/ProfilePic1.jpg",
       name: "Mark Killerz",
-      lastMessage: "Many desktop publishing packages...",
+      lastMessage: "Many desktop publishing packages publishing publishing",
       time: "7:41",
       seen: false,
       notification: true,
@@ -88,7 +88,7 @@ const MessagesBar = () => {
       id: 10,
       src: "/imgs/ProfilePic2.jpg",
       name: "Mark Killerz",
-      lastMessage: "Many desktop publishing packages...",
+      lastMessage: "Many desktop publishing packag espacka gespackages",
       time: "7:41",
       seen: true,
       notification: false,
@@ -97,17 +97,19 @@ const MessagesBar = () => {
 
   return (
     <div className="overflow-auto">
-      {MESSAGE_IMGS_DATA.map((item) => (
-        <MessagePreview
-          key={item.id}
-          src={item.src}
-          name={item.name}
-          lastMessage={item.lastMessage}
-          time={item.time}
-          seen={item.seen}
-          notification={item.notification}
-        />
-      ))}
+      {MESSAGE_IMGS_DATA.map(
+        ({ id, src, name, lastMessage, time, seen, notification }) => (
+          <MessagePreview
+            key={id}
+            src={src}
+            name={name}
+            lastMessage={lastMessage}
+            time={time}
+            seen={seen}
+            notification={notification}
+          />
+        )
+      )}
     </div>
   );
 };
