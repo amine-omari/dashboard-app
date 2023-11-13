@@ -39,7 +39,12 @@ const StoriesBar = () => {
         <p>My Story</p>
       </button>
       {STORY_IMGS_data.map((item) => (
-        <StoryPreview key={item.id} src={item.src} alt={item.alt} text={item.text} />
+        <StoryPreview
+          key={item.id}
+          src={item.src}
+          alt={item.alt}
+          text={item.text}
+        />
       ))}
     </div>
   );
