@@ -3,7 +3,7 @@ import ChatTopbar from "./ChatTopbar";
 
 const MainChatBar = () => {
   return (
-    <div>
+    <div className="bg-gray-900 w-[650px] flex flex-col">
       <ChatTopbar />
     </div>
   );
