@@ -25,7 +25,7 @@ const ChatTopbar = () => {
   ];
 
   return (
-    <div className="relative h-[140px] border-b border-x border-gray-700/60 flex items-center justify-between px-10">
+    <div className="relative h-[140px] border-b border-gray-700/60 flex items-center justify-between px-10">
       <div className="flex gap-x-4 items-center">
         <img
           src="/imgs/ProfilePic2.jpg"
