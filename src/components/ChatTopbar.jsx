@@ -1,7 +1,28 @@
 import React from "react";
 import ChatTopbarFeatures from "./ChatTopbarFeatures";
+import VideoCamera from "@/icons/VideoCamera";
+import PhoneCall from "@/icons/PhoneCall";
+import Camera from "@/icons/Camera";
 
 const ChatTopbar = () => {
+  const FEATURES_DATA = [
+    {
+      id: 1,
+      icon: <VideoCamera />,
+      textcolor: "text-blue-300",
+    },
+    {
+      id: 2,
+      icon: <PhoneCall />,
+      textcolor: "text-green-300",
+    },
+    {
+      id: 3,
+      icon: <Camera />,
+      textcolor: "text-gray-400",
+    },
+  ];
+
   return (
     <div className="h-[139px] border-b border-gray-700/60 flex items-center justify-between px-10">
       <div className="flex gap-x-4 items-center">
@@ -16,8 +37,11 @@ const ChatTopbar = () => {
         </div>
       </div>
       <div className="flex gap-x-5">
-        <ChatTopbarFeatures />
+        {FEATURES_DATA.map(({ id, icon, textcolor }) => (
+          <ChatTopbarFeatures key={id} icon={icon} textcolor={textcolor} />
+        ))}
       </div>
+      <div></div>
     </div>
   );
 };
