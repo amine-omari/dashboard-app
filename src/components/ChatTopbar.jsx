@@ -3,6 +3,7 @@ import ChatTopbarFeatures from "./ChatTopbarFeatures";
 import VideoCamera from "@/icons/VideoCamera";
 import PhoneCall from "@/icons/PhoneCall";
 import Camera from "@/icons/Camera";
+import ChevronRight from "@/icons/ChevronRight";
 
 const ChatTopbar = () => {
   const FEATURES_DATA = [
@@ -24,7 +25,7 @@ const ChatTopbar = () => {
   ];
 
   return (
-    <div className="h-[139px] border-b border-gray-700/60 flex items-center justify-between px-10">
+    <div className="relative h-[140px] border-b border-x border-gray-700/60 flex items-center justify-between px-10">
       <div className="flex gap-x-4 items-center">
         <img
           src="/imgs/ProfilePic2.jpg"
@@ -41,7 +42,11 @@ const ChatTopbar = () => {
           <ChatTopbarFeatures key={id} icon={icon} textcolor={textcolor} />
         ))}
       </div>
-      <div></div>
+      <div className="absolute -right-[13px]">
+        <button className="border border-gray-700/60 bg-gray-900 p-1.5 text-white rounded-full">
+          <ChevronRight />
+        </button>
+      </div>
     </div>
   );
 };
