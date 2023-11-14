@@ -1,9 +1,11 @@
 import React from 'react'
 
-const ChatTopbarFeatures = () => {
+const ChatTopbarFeatures = ({icon, textcolor}) => {
   return (
-    <div>ChatTopbarFeatures</div>
-  )
+    <button className={`border border-gray-700/60 p-3 rounded-full ${textcolor}`}>
+      {icon}
+    </button>
+  );
 }
 
 export default ChatTopbarFeatures
