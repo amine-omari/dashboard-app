@@ -2,7 +2,7 @@ import React from "react";
 
 const ChatBarSection = () => {
   return (
-    <div className="px-7 overflow-auto scrollbar-none max-h-[67%]">
+    <div className="px-7 overflow-auto scrollbar-none">
       <section className="space-y-8">
         <div className="relative flex gap-x-3 mt-10">
           <img
