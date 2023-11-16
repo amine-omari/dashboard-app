@@ -11,16 +11,19 @@ const ChatTopbar = () => {
       id: 1,
       icon: <VideoCamera />,
       textcolor: "text-blue-300",
+      hovertext: "hover:text-blue-400",
     },
     {
       id: 2,
       icon: <PhoneCall />,
       textcolor: "text-green-300",
+      hovertext: "hover:text-green-400",
     },
     {
       id: 3,
       icon: <Camera />,
       textcolor: "text-gray-400",
+      hovertext: "hover:text-gray-300",
     },
   ];
 
@@ -38,8 +41,13 @@ const ChatTopbar = () => {
         </div>
       </div>
       <div className="flex gap-x-5">
-        {FEATURES_DATA.map(({ id, icon, textcolor }) => (
-          <ChatTopbarFeatures key={id} icon={icon} textcolor={textcolor} />
+        {FEATURES_DATA.map(({ id, icon, textcolor, hovertext }) => (
+          <ChatTopbarFeatures
+            key={id}
+            icon={icon}
+            textcolor={textcolor}
+            hovertext={hovertext}
+          />
         ))}
       </div>
       <div className="absolute -right-[13px]">
