@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <div className="w-full">
         <Topbar />
-        <div className="flex max-h-screen">
+        <div className="flex h-screen">
           <MessagesStoriesBar />
           <MainChatBar />
         </div>
