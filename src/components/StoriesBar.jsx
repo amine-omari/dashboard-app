@@ -28,6 +28,12 @@ const StoriesBar = () => {
       alt: "profile-img4",
       text: "Jack M.",
     },
+    {
+      id: 5,
+      src: "/imgs/ProfilePic1.jpg",
+      alt: "profile-img1",
+      text: "Creme D.",
+    },
   ];
 
   return (
