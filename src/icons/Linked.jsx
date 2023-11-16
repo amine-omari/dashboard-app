@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Link = () => {
+const Linked = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ const Link = () => {
   );
 }
 
-export default Link
+export default Linked
