@@ -3,7 +3,7 @@ import Messages from "./Messages";
 
 const ChatBarSection = () => {
   return (
-    <main className="px-7 overflow-auto scrollbar-none">
+    <main className="px-7 overflow-auto scrollbar-none pt-20">
       <section className="space-y-10">
         <div className="w-[66%]">
           <Messages
