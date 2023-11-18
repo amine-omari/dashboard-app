@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SharedImagesBar from "./SharedImagesBar";
 
 const MainSharedBar = () => {
   return (
-    <div>MainSharedBar</div>
-  )
-}
+    <div>
+      <SharedImagesBar />
+    </div>
+  );
+};
 
-export default MainSharedBar
+export default MainSharedBar;
