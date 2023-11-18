@@ -4,7 +4,7 @@ import MessagesBar from "./MessagesBar";
 
 const MessagesStoriesBar = () => {
   return (
-    <div className="bg-gray-900/95 flex flex-col w-[370px]">
+    <div className="bg-gray-900/95 flex flex-col w-[27%]">
       <StoriesBar />
       <MessagesBar />
     </div>
