@@ -3,16 +3,20 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 import MessagesStoriesBar from "@/components/MessagesStoriesBar";
+import MainChatBar from "@/components/MainChatBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex fixed w-full">
+    <div className="flex w-full">
       <Navbar />
       <div className="w-full">
         <Topbar />
-        <MessagesStoriesBar />
+        <div className="flex h-screen">
+          <MessagesStoriesBar />
+          <MainChatBar />
+        </div>
       </div>
     </div>
   );

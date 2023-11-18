@@ -28,10 +28,16 @@ const StoriesBar = () => {
       alt: "profile-img4",
       text: "Jack M.",
     },
+    {
+      id: 5,
+      src: "/imgs/ProfilePic1.jpg",
+      alt: "profile-img1",
+      text: "Creme D.",
+    },
   ];
 
   return (
-    <div className="overflow-auto whitespace-nowrap scrollbar-thin flex gap-x-6 p-5 h-[180px] border-b border-gray-700/60">
+    <div className="overflow-auto whitespace-nowrap scrollbar-thin flex gap-x-6 items-center px-5 min-h-[115px] border-b border-gray-700/60">
       <button className="flex flex-col text-gray-200 font-semibold text-sm space-y-1">
         <span className="border border-gray-700 p-4 rounded-full text-gray-400">
           <Plus />
@@ -39,7 +45,12 @@ const StoriesBar = () => {
         <p>My Story</p>
       </button>
       {STORY_IMGS_data.map((item) => (
-        <StoryPreview key={item.id} src={item.src} alt={item.alt} text={item.text} />
+        <StoryPreview
+          key={item.id}
+          src={item.src}
+          alt={item.alt}
+          text={item.text}
+        />
       ))}
     </div>
   );
