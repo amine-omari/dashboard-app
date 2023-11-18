@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const ImgsSharedContainer = () => {
+const ImgsSharedContainer = ({ src }) => {
   return (
-    <div>ImgsSharedContainer</div>
-  )
-}
+    <img
+      src={src}
+      alt="Shared Img"
+      className="rounded-xl w-16 h-16"
+    />
+  );
+};
 
-export default ImgsSharedContainer
+export default ImgsSharedContainer;
