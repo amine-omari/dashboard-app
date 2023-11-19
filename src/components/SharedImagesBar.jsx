@@ -8,25 +8,25 @@ const SharedImagesBar = () => {
       src: "/imgs/GradientImg1.jpg",
     },
     {
-      id: 1,
+      id: 2,
       src: "/imgs/GradientImg2.jpg",
     },
     {
-      id: 1,
+      id: 3,
       src: "/imgs/GradientImg3.jpg",
     },
     {
-      id: 1,
+      id: 4,
       src: "/imgs/GradientImg4.jpg",
     },
     {
-      id: 1,
+      id: 5,
       src: "/imgs/GradientImg1.jpg",
     },
   ];
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       <div className="flex justify-between">
         <h2 className="text-white">Shared Images</h2>
         <button className="text-violet-500 text-sm">Show all</button>
