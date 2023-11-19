@@ -34,7 +34,7 @@ const SharedFilesBar = () => {
   ];
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-4">
       <div className="flex justify-between">
         <h2 className="text-white">Shared Files</h2>
         <button className="text-sm text-violet-500">Show all</button>
