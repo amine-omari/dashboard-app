@@ -32,8 +32,8 @@ const SharedImagesBar = () => {
         <button className="text-violet-500 text-sm">Show all</button>
       </div>
       <div className="flex overflow-auto scrollbar-thin scrollbar-thumb-gray-700/30 py-2 gap-x-2.5">
-        {SHARED_IMGS_DATA.map(({ src }) => (
-          <ImgsSharedContainer src={src} />
+        {SHARED_IMGS_DATA.map(({ id, src }) => (
+          <ImgsSharedContainer key={id} src={src} />
         ))}
       </div>
     </div>
