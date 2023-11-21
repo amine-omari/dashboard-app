@@ -96,7 +96,7 @@ const MessagesBar = () => {
   ];
 
   return (
-    <div className="overflow-auto scrollbar-none">
+    <div className="overflow-scroll scrollbar-none">
       {MESSAGE_IMGS_DATA.map(
         ({ id, src, name, lastMessage, time, seen, notification }) => (
           <MessagePreview
