@@ -29,7 +29,7 @@ const ChatBarSection = () => {
                   customizable to give performance and soul to your dream car...
                 </p>
                 <img
-                  src="https://cdn.dribbble.com/userupload/10131426/file/original-431fce1d17da5bc6fba8ac6bfea62d91.png?resize=400x0"
+                  src="/imgs/CarStoreImg1.jpg"
                   alt="cars store pic"
                   className="mt-5 rounded-xl"
                 />

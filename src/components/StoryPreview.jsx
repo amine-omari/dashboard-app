@@ -3,12 +3,8 @@ import React from "react";
 const StoryPreview = ({ src, alt, text }) => {
   return (
     <button className="flex flex-col items-center text-gray-200 font-semibold text-sm space-y-1">
-      <span>
-        <img
-          src={src}
-          className="max-w-[58px] max-h-[58px] rounded-full"
-          alt={alt}
-        />
+      <span className="w-14 h-14 bg-red-500 rounded-full overflow-hidden ">
+        <img src={src} alt={alt} />
       </span>
       <p>{text}</p>
     </button>
