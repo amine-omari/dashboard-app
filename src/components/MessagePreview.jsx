@@ -18,7 +18,7 @@ const MessagePreview = ({
 
       <div className="flex flex-col items-start">
         <p className="text-gray-200">{name}</p>
-        <p className="text-gray-500 text-sm text-left truncate w-[250px] flex-2">
+        <p className="text-gray-500 text-sm text-left truncate w-[230px] flex-2">
           {lastMessage}
         </p>
       </div>
