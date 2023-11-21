@@ -13,11 +13,11 @@ export default function Home() {
     <div className="flex w-full">
       <Navbar />
       <div className="w-full h-screen overflow-hidden">
-        <div className="h-[10%]">
+        <div className="h-[8%]">
           <Topbar />
         </div>
 
-        <div className="flex h-[90%]">
+        <div className="flex h-[92%]">
           <MessagesStoriesBar />
           <MainChatBar />
           <MainSharedBar />
