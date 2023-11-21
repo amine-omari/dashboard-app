@@ -12,9 +12,12 @@ export default function Home() {
   return (
     <div className="flex w-full">
       <Navbar />
-      <div className="w-full">
-        <Topbar />
-        <div className="flex h-screen">
+      <div className="w-full h-screen overflow-hidden">
+        <div className="h-[6%]">
+          <Topbar />
+        </div>
+
+        <div className="flex h-[94%]">
           <MessagesStoriesBar />
           <MainChatBar />
           <MainSharedBar />
