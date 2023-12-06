@@ -1,11 +1,11 @@
 import React from "react";
-import Button from "./Button";
 import InboxIcon from "@/icons/InboxIcon";
 import Calender from "@/icons/Calender";
 import Users from "@/icons/Users";
 import VideoCamera from "@/icons/VideoCamera";
 import DocumentDuplicate from "@/icons/DocumentDuplicate";
 import Camera from "@/icons/Camera";
+import NavbarButton from "./NavbarButton";
 
 const Navbar = () => {
   const BUTTON_ARRAY = [
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <div className="text-white flex flex-col mt-32">
         {BUTTON_ARRAY.map((Icon, index) => (
-          <Button key={index} icon={<Icon />} />
+          <NavbarButton key={index} icon={<Icon />} />
         ))}
       </div>
     </nav>
