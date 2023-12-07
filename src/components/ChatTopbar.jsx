@@ -51,7 +51,7 @@ const ChatTopbar = () => {
         ))}
       </div>
       <div className="absolute -right-[13px]">
-        <button className="border border-gray-700/60 bg-gray-900 p-1.5 text-white rounded-full">
+        <button className="border border-gray-700/60 bg-gray-900 p-1.5 text-white rounded-full hover:bg-gray-800">
           <ChevronRight />
         </button>
       </div>
