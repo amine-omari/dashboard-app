@@ -1,7 +1,7 @@
 import React from "react";
 import Messages from "./Messages";
 
-const ChatBarSection = () => {
+const ChatBarSection1 = () => {
   return (
     <main className="px-7 overflow-auto scrollbar-none pt-20">
       <section className="space-y-10">
@@ -63,4 +63,4 @@ const ChatBarSection = () => {
   );
 };
 
-export default ChatBarSection;
+export default ChatBarSection1;
