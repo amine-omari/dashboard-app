@@ -13,7 +13,11 @@ const MessagePreview = ({
   return (
     <button className="p-5 flex items-center space-x-3 w-full border-b border-gray-700/60 hover:bg-gray-700/50">
       <div className="flex-1">
-        <img src={src} alt="profile pic" className="min-w-12 min-h-12 rounded-full" />
+        <img
+          src={src}
+          alt="profile pic"
+          className="min-w-12 min-h-12 rounded-full"
+        />
       </div>
 
       <div className="flex flex-col items-start">
