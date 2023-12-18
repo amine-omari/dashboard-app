@@ -6,7 +6,7 @@ const MessagesBar = () => {
     {
       id: 1,
       src: "/imgs/ProfilePic1.jpg",
-      name: "Mark Killerz",
+      profileName: "Mark Killerz",
       lastMessage: "it is a long established fact that a sdfsdffd sdfsdfsdf",
       time: "7:41",
       seen: false,
@@ -15,7 +15,7 @@ const MessagesBar = () => {
     {
       id: 2,
       src: "/imgs/ProfilePic2.jpg",
-      name: "Mark Killerz",
+      profileName: "Mark Killerz",
       lastMessage: "Many desktop publishing packages",
       time: "7:41",
       seen: false,
@@ -24,7 +24,7 @@ const MessagesBar = () => {
     {
       id: 3,
       src: "/imgs/ProfilePic3.jpg",
-      name: "Marcin Duda",
+      profileName: "Marcin Duda",
       lastMessage: "Various vesions have evolved over",
       time: "9:02",
       seen: false,
@@ -33,7 +33,7 @@ const MessagesBar = () => {
     {
       id: 4,
       src: "/imgs/ProfilePic4.jpg",
-      name: "Wiz Clark",
+      profileName: "Wiz Clark",
       lastMessage: "it is a long established fact that a",
       time: "9:41",
       seen: true,
@@ -42,7 +42,7 @@ const MessagesBar = () => {
     {
       id: 5,
       src: "/imgs/ProfilePic1.jpg",
-      name: "Creme Digital",
+      profileName: "Creme Digital",
       lastMessage: "You: fireeee!",
       time: "10:30",
       seen: true,
@@ -51,7 +51,7 @@ const MessagesBar = () => {
     {
       id: 6,
       src: "/imgs/ProfilePic2.jpg",
-      name: "Michael Dias",
+      profileName: "Michael Dias",
       lastMessage: "You: wow, really cool",
       time: "11:24",
       seen: true,
@@ -60,7 +60,7 @@ const MessagesBar = () => {
     {
       id: 7,
       src: "/imgs/ProfilePic3.jpg",
-      name: "Ahmed Pularizo",
+      profileName: "Ahmed Pularizo",
       lastMessage: "Sometimes on purpose",
       time: "12:09",
       seen: false,
@@ -69,7 +69,7 @@ const MessagesBar = () => {
     {
       id: 8,
       src: "/imgs/ProfilePic4.jpg",
-      name: "Jacob Ben",
+      profileName: "Jacob Ben",
       lastMessage: "it is a long established fact that a",
       time: "12:58",
       seen: false,
@@ -78,7 +78,7 @@ const MessagesBar = () => {
     {
       id: 9,
       src: "/imgs/ProfilePic1.jpg",
-      name: "Mark Killerz",
+      profileName: "Mark Killerz",
       lastMessage: "Many desktop publishing packages publishing publishing",
       time: "7:41",
       seen: false,
@@ -87,7 +87,7 @@ const MessagesBar = () => {
     {
       id: 10,
       src: "/imgs/ProfilePic2.jpg",
-      name: "Mark Killerz",
+      profileName: "Mark Killerz",
       lastMessage: "Many desktop publishing packag espacka gespackages",
       time: "7:41",
       seen: true,
@@ -98,11 +98,19 @@ const MessagesBar = () => {
   return (
     <div className="overflow-scroll scrollbar-none">
       {MESSAGE_IMGS_DATA.map(
-        ({ id, src, name, lastMessage, time, seen, notification }) => (
+        ({
+          id,
+          src,
+          profileName,
+          lastMessage,
+          time,
+          seen,
+          notification,
+        }) => (
           <MessagePreview
             key={id}
             src={src}
-            name={name}
+            profileName={profileName}
             lastMessage={lastMessage}
             time={time}
             seen={seen}
