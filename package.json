@@ -18,6 +18,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
     "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.3.0"
   }
