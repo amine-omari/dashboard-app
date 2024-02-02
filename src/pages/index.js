@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [ActiveUser, setActiveUser] = useState();
-  const [chatSection, setChatSection] = useState();
+  const [chatSection, setChatSection] = useState(true);
   return (
     <div className="flex w-full">
       <Navbar setChatSection={setChatSection} chatSection={chatSection} />
@@ -15,12 +15,14 @@ export default function Home() {
         <div className="h-[8%]">
           <Topbar />
         </div>
-        {chatSection && (
+        {chatSection ? (
           <div className="flex h-[92%]">
             <MessagesStoriesBar setActiveUser={setActiveUser} />
             <MainChatBar ActiveUser={ActiveUser} />
             <MainSharedBar />
           </div>
+        ) : (
+          <div className="h-[92%] bg-gray-800"></div>
         )}
       </div>
     </div>
