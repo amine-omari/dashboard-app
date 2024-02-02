@@ -24,7 +24,12 @@ const Navbar = ({ setChatSection, chatSection }) => {
       </div>
       <div className="mt-32 flex flex-col text-white">
         {BUTTON_ARRAY.map(({ icon, index, onClick }) => (
-          <NavbarButton key={index} icon={icon} onClick={onClick} />
+          <NavbarButton
+            key={index}
+            icon={icon}
+            onClick={onClick}
+            chatSection={chatSection}
+          />
         ))}
       </div>
     </nav>
