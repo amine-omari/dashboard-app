@@ -3,7 +3,7 @@ import Messages from "./Messages";
 
 const ChatBarSection1 = () => {
   return (
-    <main className="px-7 overflow-auto scrollbar-none pt-20">
+    <main className="overflow-auto px-7 pt-20 scrollbar-none">
       <section className="space-y-10">
         <div className="w-[66%]">
           <Messages
@@ -19,7 +19,7 @@ const ChatBarSection1 = () => {
               https://dribbble.com/shots/17171600
             </a>
             <div className="flex gap-x-3">
-              <span className="w-1.5 bg-violet-500 rounded-full"></span>
+              <span className="w-1.5 rounded-full bg-violet-500"></span>
               <div>
                 <h2 className="text-violet-500">Dribbble</h2>
                 <h2 className="text-white">Car Parts Store - concept design</h2>
@@ -58,7 +58,7 @@ const ChatBarSection1 = () => {
           </div>
         </div>
       </section>
-      <p className="text-gray-500 text-xs my-4">Michael is typing...</p>
+      <p className="my-4 text-xs text-gray-500">Michael is typing...</p>
     </main>
   );
 };
