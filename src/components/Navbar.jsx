@@ -7,24 +7,24 @@ import DocumentDuplicate from "@/icons/DocumentDuplicate";
 import Camera from "@/icons/Camera";
 import NavbarButton from "./NavbarButton";
 
-const Navbar = () => {
+const Navbar = ({ setChatSection, chatSection }) => {
   const BUTTON_ARRAY = [
-    InboxIcon,
-    Calender,
-    Users,
-    VideoCamera,
-    DocumentDuplicate,
-    Camera,
+    { id: 0, icon: <InboxIcon />, onClick: () => setChatSection(!chatSection) },
+    { id: 1, icon: <Calender /> },
+    { id: 2, icon: <Users /> },
+    { id: 3, icon: <VideoCamera /> },
+    { id: 4, icon: <DocumentDuplicate /> },
+    { id: 5, icon: <Camera /> },
   ];
 
   return (
-    <nav className="bg-gray-900 w-20 h-screen">
-      <div className="text-center pt-3 pb-5 font-semibold text-white text-4xl">
+    <nav className="h-screen w-20 bg-gray-900">
+      <div className="pb-5 pt-3 text-center text-4xl font-semibold text-white">
         c<span className="text-violet-500/90">.</span>
       </div>
-      <div className="text-white flex flex-col mt-32">
-        {BUTTON_ARRAY.map((Icon, index) => (
-          <NavbarButton key={index} icon={<Icon />} />
+      <div className="mt-32 flex flex-col text-white">
+        {BUTTON_ARRAY.map(({ icon, index, onClick }) => (
+          <NavbarButton key={index} icon={icon} onClick={onClick} />
         ))}
       </div>
     </nav>

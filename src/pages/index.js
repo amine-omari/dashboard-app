@@ -10,7 +10,7 @@ export default function Home() {
   const [chatSection, setChatSection] = useState();
   return (
     <div className="flex w-full">
-      <Navbar setChatSection={setChatSection} />
+      <Navbar setChatSection={setChatSection} chatSection={chatSection} />
       <div className="h-screen w-full overflow-hidden">
         <div className="h-[8%]">
           <Topbar />
